@@ -1,0 +1,283 @@
+body,html {
+  margin: auto;
+  padding: 0;
+  left: 0;
+  top: 0;
+  background: rgb(29, 29, 29);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 10%;
+  text-align: center;
+  color: #d3d3d3;
+}
+
+#text-location {
+  text-align: center;
+  color: rgb(155, 155, 155);
+  border-top: solid 3px rgb(80, 80, 80);
+  border-bottom: solid 3px rgb(80, 80, 80);
+}
+
+#image1 {
+  width: auto;
+  height: 42px;
+  margin-bottom: 0;
+}
+
+#coffee {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 490px;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#image {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border: solid 3px rgb(80, 80, 80);
+  margin-top: 4%;
+  text-align: center;
+}
+
+
+#nav-bar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: solid 3px rgb(80, 80, 80);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    text-align: center;
+  }
+  
+  li {
+    display: inline;
+  }
+
+  li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    top: 0;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-bottom: 5px;
+  }
+  
+  li a:hover:not(.active) {
+    color: rgb(255, 53, 53);
+  }
+
+
+.flex-container {
+    display: flex;
+    background: white;
+    border: solid 3px rgb(80, 80, 80);
+}
+
+  .flex-container  div {
+    background-color: #1b1b1b;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 10px double rgb(100, 100, 100);
+  }
+
+  .flex-container h4 {
+    text-align: center;
+    color: rgb(187, 187, 187);
+  }
+
+  #form #email, #number{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 15px;
+    width: 30%;
+  }
+  
+
+   #submit {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+  }
+
+
+  #video{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius:5%;
+  }
+
+  /* ----- contact ----- */
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+  }
+
+  .flex-container div {
+    width: 50%;
+    height: 520px;
+    box-shadow: 10px 10px 20px 2px rgb(77, 77, 77)
+  }
+
+  .image-container {
+    height: 295px;
+    width: 274px;
+    align-self: flex-start;
+    position: relative;
+  }
+
+  .contact-text {
+    text-align: center;
+    color: rgb(201, 201, 201);
+  }
+
+  @media screen and (max-width: 600px) {
+    #nav-bar {
+      float: left;
+      width: 100%;
+    }
+  }
+
+
+  /* ----- menu ----- */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    background: white;
+    width: 290px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  .card-image {
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 0 0 0;
+  }
+
+  .card h3 {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding:15px 20px;
+    display: block;
+    border-radius: 0 0 20px 2px;
+    text-align: center;
+  }
+
+  .card p, h2 {
+    text-align: center;
+  }
+
+  .card:hover {
+    background: tomato;
+    transition: 0.8s;
+  }
+
+  .card-image:hover {
+    height: 260px;
+    transition: 0.8s;
+  }
+
+
+
+  .coffee1 {
+    background-image: url(../image/Nescafe\ coffee.jpg) ;
+  }
+  .coffee2 {
+    background-image: url(../image/cappuccino.jpg) ;
+  }
+
+  .coffee3 { 
+    background-image: url(../image/caramel.jpg) ;
+  }
+
+  .coffee4 {
+    background-image: url(../image/matcha.jpg) ;
+  }
+  
+  .coffee5 {
+    background-image: url(../image/iced\ coffee.jpg) ;
+  }
+
+  .coffee6 {
+    background-image: url(../image/creamy\ coffee.jpg) ;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .card {
+      margin: 5vh;
+    }
+  }
+  
+
+
+  @media screen and (max-width: 600px) {
+    #video {
+      margin-top: 5vh;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #email {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .flex-container div {
+      overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  #home, h1, #text-location {
+    margin-top: 20vh;
+}
+}
